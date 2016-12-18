@@ -1,0 +1,153 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Course_Design\ZD_Serial_Port\simulation\modelsim
+Edivider
+Z1 w1482053875
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z3 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z5 dC:\Course_Design\ZD_Serial_Port\simulation\modelsim
+Z6 8C:/Course_Design/ZD_Serial_Port/Divider.vhd
+Z7 FC:/Course_Design/ZD_Serial_Port/Divider.vhd
+l0
+L17
+VT<kKVDl[;IhZdhNkYaXV21
+Z8 OV;C;6.6d;45
+31
+Z9 o-93 -work work -O0
+Z10 tExplicit 1
+!s100 0_hE0[lY8TfO=<[4D5n[k1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 7 divider 0 22 T<kKVDl[;IhZdhNkYaXV21
+l25
+L24
+VT[2SUXZO9JfUUVofjeSXg3
+R8
+31
+Z11 Mx3 4 ieee 14 std_logic_1164
+Z12 Mx2 4 ieee 15 std_logic_arith
+Z13 Mx1 4 ieee 18 std_logic_unsigned
+R9
+R10
+!s100 9jT4HbA]K3`0ICED]]MCi2
+Ereceiver
+Z14 w1482053896
+R2
+R3
+R4
+R5
+Z15 8C:/Course_Design/ZD_Serial_Port/Receiver.vhd
+Z16 FC:/Course_Design/ZD_Serial_Port/Receiver.vhd
+l0
+L10
+VZWWfF[VO0^90XPILO0^lA3
+R8
+31
+R9
+R10
+!s100 gnT1Th]<bOU;Qni1D><Uj2
+Abehav
+R2
+R3
+R4
+DEx4 work 8 receiver 0 22 ZWWfF[VO0^90XPILO0^lA3
+l24
+L19
+V3E[3bcdGO_7m;c=15QQUc1
+R8
+31
+R11
+R12
+R13
+R9
+R10
+!s100 1RMB6IMCR;<0H]T5jK0a[1
+Etop_module
+Z17 w1482053893
+R4
+R5
+Z18 8C:/Course_Design/ZD_Serial_Port/Top_Module.vhd
+Z19 FC:/Course_Design/ZD_Serial_Port/Top_Module.vhd
+l0
+L11
+VlT1=9>Jz_Wma=];_?_Y6D1
+R8
+31
+R9
+R10
+!s100 o0B4KK^:=_kObcFV7X[I13
+Abdf_type
+R4
+DEx4 work 10 top_module 0 22 lT1=9>Jz_Wma=];_?_Y6D1
+l57
+L23
+V<BU[A]dE0R5Zj1N>SJWcb0
+R8
+31
+Z20 Mx1 4 ieee 14 std_logic_1164
+R9
+R10
+!s100 ;mKGb]I=KH@dLHRl8[8n:3
+Etop_module_vhd_tst
+Z21 w1482053500
+R4
+R5
+Z22 8C:/Course_Design/ZD_Serial_Port/simulation/modelsim/Top_Module.vht
+Z23 FC:/Course_Design/ZD_Serial_Port/simulation/modelsim/Top_Module.vht
+l0
+L30
+V[YYJG44@bCRH3FR^[I`Nd3
+!s100 7=K:Ol8]ikYYiZzEDmlo_3
+R8
+31
+R9
+R10
+Atop_module_arch
+R4
+DEx4 work 18 top_module_vhd_tst 0 22 [YYJG44@bCRH3FR^[I`Nd3
+l55
+L32
+VF:M2Ei6A9XdQ[WLI_n^@l0
+!s100 Y;f`:JSm7ANcZ[fd]2doZ2
+R8
+31
+R20
+R9
+R10
+Etransmitter
+Z24 w1482053895
+R2
+R3
+R4
+R5
+Z25 8C:/Course_Design/ZD_Serial_Port/Transmitter.vhd
+Z26 FC:/Course_Design/ZD_Serial_Port/Transmitter.vhd
+l0
+L11
+VV1<>BV7NMd^G;lZSAo40m2
+R8
+31
+R9
+R10
+!s100 YLbUbbQiV^_=;@BFZLPB?1
+Abehav
+R2
+R3
+R4
+DEx4 work 11 transmitter 0 22 V1<>BV7NMd^G;lZSAo40m2
+l24
+L21
+VGETUU_Jhzi5hfPES2zL=E3
+R8
+31
+R11
+R12
+R13
+R9
+R10
+!s100 J[>]7o9ZD1>A:@6U7<DSK3

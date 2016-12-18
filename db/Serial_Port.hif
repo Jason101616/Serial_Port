@@ -1,0 +1,155 @@
+Quartus II
+Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
+48
+4283
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Top_Module
+# storage
+db|Serial_Port.(0).cnf
+db|Serial_Port.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+top_module.vhd
+a6d720624e99c60617ce618ccb2b8f0
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+Receiver
+# storage
+db|Serial_Port.(1).cnf
+db|Serial_Port.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+receiver.vhd
+c6fce957337a684f538f4a7cc1bc5934
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(rbuf)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Receiver:b2v_inst
+}
+# macro_sequence
+
+# end
+# entity
+Transmitter
+# storage
+db|Serial_Port.(2).cnf
+db|Serial_Port.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+transmitter.vhd
+19ba9578cce4046e47843f9058de94
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(xbuf)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Transmitter:b2v_inst1
+}
+# macro_sequence
+
+# end
+# entity
+Divider
+# storage
+db|Serial_Port.(3).cnf
+db|Serial_Port.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+divider.vhd
+316ff5a4b7a82bd7ff2458d9a5afc
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Divider:b2v_inst2
+}
+# macro_sequence
+
+# end
+# complete
+
