@@ -10,15 +10,7 @@
 # ** Warning: Copied C:\altera\11.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/receiver.vhd}
-# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity receiver
-# -- Compiling architecture behav of receiver
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/transmitter.vhd}
+# vcom -93 -work work {C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Transmitter.vhd}
 # Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
@@ -26,57 +18,13 @@
 # -- Loading package std_logic_unsigned
 # -- Compiling entity transmitter
 # -- Compiling architecture behav of transmitter
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/baud.vhd}
-# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity baud
-# -- Compiling architecture behavioral of baud
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/Top_Module.vhd}
+# vcom -93 -work work {C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Top_Module.vhd}
 # Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Compiling entity top_module
 # -- Compiling architecture bdf_type of top_module
-# 
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/simulation/modelsim/Top_Module.vht}
-# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity top_module_vhd_tst
-# -- Compiling architecture top_module_arch of top_module_vhd_tst
-# ** Warning: [4] C:/Course_Design/ZD_Serial_Port/simulation/modelsim/Top_Module.vht(78): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Course_Design/ZD_Serial_Port/simulation/modelsim/Top_Module.vht(101): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclone -L rtl_work -L work -voptargs="+acc" Top_Module_vhd_tst
-# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclone -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Top_Module_vhd_tst 
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.top_module_vhd_tst(top_module_arch)
-# Loading work.top_module(bdf_type)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.receiver(behav)
-# Loading work.transmitter(behav)
-# Loading work.baud(behavioral)
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run 10 ms
-do Serial_Port_run_msim_rtl_vhdl.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
-# 
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/receiver.vhd}
+# vcom -93 -work work {C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Receiver.vhd}
 # Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
@@ -84,114 +32,7 @@ do Serial_Port_run_msim_rtl_vhdl.do
 # -- Loading package std_logic_unsigned
 # -- Compiling entity receiver
 # -- Compiling architecture behav of receiver
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/transmitter.vhd}
-# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity transmitter
-# -- Compiling architecture behav of transmitter
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/baud.vhd}
-# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity baud
-# -- Compiling architecture behavioral of baud
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/Top_Module.vhd}
-# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity top_module
-# -- Compiling architecture bdf_type of top_module
-# 
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/simulation/modelsim/Top_Module.vht}
-# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity top_module_vhd_tst
-# -- Compiling architecture top_module_arch of top_module_vhd_tst
-# ** Warning: [4] C:/Course_Design/ZD_Serial_Port/simulation/modelsim/Top_Module.vht(78): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Course_Design/ZD_Serial_Port/simulation/modelsim/Top_Module.vht(101): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclone -L rtl_work -L work -voptargs="+acc" Top_Module_vhd_tst
-# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclone -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Top_Module_vhd_tst 
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.top_module_vhd_tst(top_module_arch)
-# Loading work.top_module(bdf_type)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.receiver(behav)
-# Loading work.transmitter(behav)
-# Loading work.baud(behavioral)
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run 10 ms
-do Serial_Port_run_msim_rtl_vhdl.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
-# 
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/receiver.vhd}
-# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity receiver
-# -- Compiling architecture behav of receiver
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/transmitter.vhd}
-# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity transmitter
-# -- Compiling architecture behav of transmitter
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/baud.vhd}
-# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
-# ** Error: (vcom-7) Failed to open design unit file "C:/Course_Design/ZD_Serial_Port/baud.vhd" in read mode.
-# No such file or directory. (errno = ENOENT)
-# ** Error: C:/altera/11.0sp1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./Serial_Port_run_msim_rtl_vhdl.do line 10
-# C:/altera/11.0sp1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/baud.vhd}"
-do Serial_Port_run_msim_rtl_vhdl.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
-# 
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/Receiver.vhd}
-# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity receiver
-# -- Compiling architecture behav of receiver
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/Transmitter.vhd}
-# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity transmitter
-# -- Compiling architecture behav of transmitter
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/Divider.vhd}
+# vcom -93 -work work {C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Divider.vhd}
 # Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
@@ -199,21 +40,15 @@ do Serial_Port_run_msim_rtl_vhdl.do
 # -- Loading package std_logic_unsigned
 # -- Compiling entity divider
 # -- Compiling architecture behavioral of divider
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/Top_Module.vhd}
-# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity top_module
-# -- Compiling architecture bdf_type of top_module
 # 
-# vcom -93 -work work {C:/Course_Design/ZD_Serial_Port/simulation/modelsim/Top_Module.vht}
+# vcom -93 -work work {C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/simulation/modelsim/Top_Module.vht}
 # Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Compiling entity top_module_vhd_tst
 # -- Compiling architecture top_module_arch of top_module_vhd_tst
-# ** Warning: [4] C:/Course_Design/ZD_Serial_Port/simulation/modelsim/Top_Module.vht(78): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Course_Design/ZD_Serial_Port/simulation/modelsim/Top_Module.vht(101): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/simulation/modelsim/Top_Module.vht(78): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/simulation/modelsim/Top_Module.vht(101): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclone -L rtl_work -L work -voptargs="+acc" Top_Module_vhd_tst
 # vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclone -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Top_Module_vhd_tst 

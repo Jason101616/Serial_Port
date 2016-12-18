@@ -2,15 +2,15 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Course_Design\ZD_Serial_Port\simulation\modelsim
+Z0 dC:\OtherDisks\Study\EXPERIENT\VHDL\ZD_Serial_Port\simulation\modelsim
 Edivider
-Z1 w1482053875
+Z1 w1482072444
 Z2 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
 Z3 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
 Z4 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
-Z5 dC:\Course_Design\ZD_Serial_Port\simulation\modelsim
-Z6 8C:/Course_Design/ZD_Serial_Port/Divider.vhd
-Z7 FC:/Course_Design/ZD_Serial_Port/Divider.vhd
+Z5 dC:\OtherDisks\Study\EXPERIENT\VHDL\ZD_Serial_Port\simulation\modelsim
+Z6 8C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Divider.vhd
+Z7 FC:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Divider.vhd
 l0
 L17
 VT<kKVDl[;IhZdhNkYaXV21
@@ -36,13 +36,13 @@ R9
 R10
 !s100 9jT4HbA]K3`0ICED]]MCi2
 Ereceiver
-Z14 w1482053896
+R1
 R2
 R3
 R4
 R5
-Z15 8C:/Course_Design/ZD_Serial_Port/Receiver.vhd
-Z16 FC:/Course_Design/ZD_Serial_Port/Receiver.vhd
+Z14 8C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Receiver.vhd
+Z15 FC:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Receiver.vhd
 l0
 L10
 VZWWfF[VO0^90XPILO0^lA3
@@ -68,11 +68,11 @@ R9
 R10
 !s100 1RMB6IMCR;<0H]T5jK0a[1
 Etop_module
-Z17 w1482053893
+R1
 R4
 R5
-Z18 8C:/Course_Design/ZD_Serial_Port/Top_Module.vhd
-Z19 FC:/Course_Design/ZD_Serial_Port/Top_Module.vhd
+Z16 8C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Top_Module.vhd
+Z17 FC:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Top_Module.vhd
 l0
 L11
 VlT1=9>Jz_Wma=];_?_Y6D1
@@ -89,16 +89,16 @@ L23
 V<BU[A]dE0R5Zj1N>SJWcb0
 R8
 31
-Z20 Mx1 4 ieee 14 std_logic_1164
+Z18 Mx1 4 ieee 14 std_logic_1164
 R9
 R10
 !s100 ;mKGb]I=KH@dLHRl8[8n:3
 Etop_module_vhd_tst
-Z21 w1482053500
+R1
 R4
 R5
-Z22 8C:/Course_Design/ZD_Serial_Port/simulation/modelsim/Top_Module.vht
-Z23 FC:/Course_Design/ZD_Serial_Port/simulation/modelsim/Top_Module.vht
+Z19 8C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/simulation/modelsim/Top_Module.vht
+Z20 FC:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/simulation/modelsim/Top_Module.vht
 l0
 L30
 V[YYJG44@bCRH3FR^[I`Nd3
@@ -116,17 +116,17 @@ VF:M2Ei6A9XdQ[WLI_n^@l0
 !s100 Y;f`:JSm7ANcZ[fd]2doZ2
 R8
 31
-R20
+R18
 R9
 R10
 Etransmitter
-Z24 w1482053895
+R1
 R2
 R3
 R4
 R5
-Z25 8C:/Course_Design/ZD_Serial_Port/Transmitter.vhd
-Z26 FC:/Course_Design/ZD_Serial_Port/Transmitter.vhd
+Z21 8C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Transmitter.vhd
+Z22 FC:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Transmitter.vhd
 l0
 L11
 VV1<>BV7NMd^G;lZSAo40m2
