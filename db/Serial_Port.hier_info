@@ -5,7 +5,9 @@ RST => Transmitter:b2v_inst1.xreset
 RST => Divider:b2v_inst2.resetb
 CLK => Divider:b2v_inst2.clk
 Buttom1 => Divider:b2v_inst2.but1
+Buttom1 => Buttom1_Out.DATAIN
 Buttom2 => Divider:b2v_inst2.but2
+Buttom2 => Buttom2_Out.DATAIN
 
 
 |Top_Module|Receiver:b2v_inst
@@ -318,7 +320,6 @@ rin => ReceiveData.IN1
 
 
 |Top_Module|Transmitter:b2v_inst1
-bclkt => xout2~reg0.CLK
 bclkt => xout~reg0.CLK
 bclkt => \Transmit_Data:xbufs[0].CLK
 bclkt => \Transmit_Data:xbufs[1].CLK
@@ -465,11 +466,9 @@ xreset => \Transmit_Data:xbufs[4].ENA
 xreset => \Transmit_Data:xbufs[3].ENA
 xreset => \Transmit_Data:xbufs[2].ENA
 xreset => \Transmit_Data:xbufs[1].ENA
-xreset => xout2~reg0.ENA
-xreset => \Transmit_Data:xbufs[0].ENA
 xreset => xout~reg0.ENA
+xreset => \Transmit_Data:xbufs[0].ENA
 x_cmd => xout.OUTPUTSELECT
-x_cmd => xout2.OUTPUTSELECT
 x_cmd => xbufs.OUTPUTSELECT
 x_cmd => xbufs.OUTPUTSELECT
 x_cmd => xbufs.OUTPUTSELECT
@@ -493,8 +492,6 @@ xbuf[7] => xbufs.DATAA
 
 
 |Top_Module|Divider:b2v_inst2
-clk => but2_out~reg0.CLK
-clk => but1_out~reg0.CLK
 clk => bclk~reg0.CLK
 clk => cnt[0].CLK
 clk => cnt[1].CLK
@@ -561,15 +558,11 @@ resetb => cnt[28].ACLR
 resetb => cnt[29].ACLR
 resetb => cnt[30].ACLR
 resetb => cnt[31].ACLR
-resetb => but2_out~reg0.ENA
-resetb => but1_out~reg0.ENA
 but1 => process_0.IN0
 but1 => process_0.IN0
 but1 => process_0.IN0
-but1 => but1_out~reg0.DATAIN
 but2 => process_0.IN1
 but2 => process_0.IN1
 but2 => process_0.IN1
-but2 => but2_out~reg0.DATAIN
 
 

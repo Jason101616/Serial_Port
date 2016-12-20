@@ -14,8 +14,8 @@ port(
 	 xreset:in std_logic:='0';
 	 x_cmd:in std_logic;		--read rising_edge than transmit one frame
 	 xbuf: in std_logic_vector(7 downto 0);
-	 xout:out std_logic;
-	 xout2: out std_logic);
+	 xout:out std_logic
+	 );
 end Transmitter;
 
 
@@ -39,7 +39,6 @@ begin
 				when x_idle=>
 					if (x_cmd='0') then
 						xout<='1';
-						xout2<='1';
 					else
 						xbufs:=xbuf;
 						xbufs_add:=xbuf+"00010000"; --xbufs_add=xbufs+16
@@ -48,7 +47,6 @@ begin
 				
 				when x_start=>
 					xout<='0';
-					xout2<='0';
 					cnt16:=cnt16+1;
 					if(cnt16=16) then
 						state<=x_shift;
@@ -57,7 +55,6 @@ begin
 					
 				when x_shift=>
 					xout<=xbufs(tbitcnt);	--Decide which register to transmit.
-					xout2<=xbufs(tbitcnt);
 					cnt16:=cnt16+1;
 					if(cnt16=16) then
 						if(tbitcnt=7) then
@@ -72,7 +69,6 @@ begin
 					
 				when x_stop=>
 					xout<='1';
-					xout2<='1';
 					cnt16:=cnt16+1;
 					if(cnt16=16) then
 						state<=x_idle;

@@ -1,5 +1,5 @@
 Flow report for Serial_Port
-Mon Dec 19 16:57:17 2016
+Tue Dec 20 11:57:47 2016
 Quartus II Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
 
 
@@ -38,15 +38,15 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Flow Summary                                                          ;
 +-----------------------+-----------------------------------------------+
-; Flow Status           ; Successful - Mon Dec 19 16:57:17 2016         ;
+; Flow Status           ; Successful - Tue Dec 20 11:57:47 2016         ;
 ; Quartus II Version    ; 11.0 Build 208 07/03/2011 SP 1 SJ Web Edition ;
 ; Revision Name         ; Serial_Port                                   ;
 ; Top-level Entity Name ; Top_Module                                    ;
 ; Family                ; Cyclone                                       ;
 ; Device                ; EP1C3T144C8                                   ;
 ; Timing Models         ; Final                                         ;
-; Total logic elements  ; 533 / 2,910 ( 18 % )                          ;
-; Total pins            ; 9 / 104 ( 9 % )                               ;
+; Total logic elements  ; 575 / 2,910 ( 20 % )                          ;
+; Total pins            ; 16 / 104 ( 15 % )                             ;
 ; Total virtual pins    ; 0                                             ;
 ; Total memory bits     ; 0 / 59,904 ( 0 % )                            ;
 ; Total PLLs            ; 0 / 1 ( 0 % )                                 ;
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/19/2016 16:57:06 ;
+; Start date & time ; 12/20/2016 11:54:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Serial_Port         ;
 +-------------------+---------------------+
@@ -69,7 +69,7 @@ applicable agreement for further details.
 +--------------------------------------+------------------------------------+---------------+-------------+--------------------+
 ; Assignment Name                      ; Value                              ; Default Value ; Entity Name ; Section Id         ;
 +--------------------------------------+------------------------------------+---------------+-------------+--------------------+
-; COMPILER_SIGNATURE_ID                ; 273406397819871.148213782625512    ; --            ; --          ; --                 ;
+; COMPILER_SIGNATURE_ID                ; 273406397819871.148220607813048    ; --            ; --          ; --                 ;
 ; EDA_DESIGN_INSTANCE_NAME             ; i1                                 ; --            ; --          ; Top_Module_vhd_tst ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Top_Module_vhd_tst                 ; --            ; --          ; eda_simulation     ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                               ; --            ; --          ; eda_simulation     ;
@@ -91,12 +91,13 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 320 MB              ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 319 MB              ; 00:00:02                           ;
 ; Fitter                    ; 00:00:03     ; 1.0                     ; 351 MB              ; 00:00:03                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 274 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 265 MB              ; 00:00:01                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 275 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 265 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 253 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:09     ; --                      ; --                  ; 00:00:08                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 263 MB              ; 00:00:00                           ;
+; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:08                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -110,6 +111,7 @@ applicable agreement for further details.
 ; Assembler                 ; Jason-PC         ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; Jason-PC         ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; Jason-PC         ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Jason-PC         ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -121,6 +123,7 @@ quartus_fit --read_settings_files=off --write_settings_files=off Serial_Port -c 
 quartus_asm --read_settings_files=off --write_settings_files=off Serial_Port -c Serial_Port
 quartus_sta Serial_Port -c Serial_Port
 quartus_eda --read_settings_files=off --write_settings_files=off Serial_Port -c Serial_Port
+quartus_eda --read_settings_files=on --write_settings_files=off Serial_Port -c Serial_Port --gen_testbench
 
 
 

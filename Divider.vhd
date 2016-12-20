@@ -16,10 +16,10 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity Divider is
     port (
-              clk,resetb:in std_logic;
-              but1,but2:in std_logic;
-              bclk:out std_logic;
-			  but1_out, but2_out: out std_logic);
+		  clk,resetb:in std_logic;
+		  but1,but2:in std_logic;
+		  bclk:out std_logic
+		  );
 end Divider;
 
 architecture behavioral of Divider is
@@ -30,7 +30,6 @@ begin
   if resetb='1' then                                         -- resetb='1'时复位
      cnt:=0; bclk<='0';
   elsif rising_edge(clk) then
-	but1_out <= but1; but2_out <= but2;
 	if (but1='0' and but2='0') then
 		if cnt>324 then 
 			cnt:=0; bclk<='1';                        --设置分频系数325:9600baud/s

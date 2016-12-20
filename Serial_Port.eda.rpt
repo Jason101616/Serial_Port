@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Serial_Port
-Mon Dec 19 16:57:17 2016
+Tue Dec 20 11:57:47 2016
 Quartus II Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
 
 
@@ -8,9 +8,7 @@ Quartus II Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
 ---------------------
   1. Legal Notice
   2. EDA Netlist Writer Summary
-  3. Simulation Settings
-  4. Simulation Generated Files
-  5. EDA Netlist Writer Messages
+  3. EDA Netlist Writer Messages
 
 
 
@@ -36,44 +34,11 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Dec 19 16:57:17 2016 ;
+; EDA Netlist Writer Status ; Successful - Tue Dec 20 11:57:47 2016 ;
 ; Revision Name             ; Serial_Port                           ;
 ; Top-level Entity Name     ; Top_Module                            ;
 ; Family                    ; Cyclone                               ;
-; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------+
-; Simulation Settings                                                                                                        ;
-+---------------------------------------------------------------------------------------------------+------------------------+
-; Option                                                                                            ; Setting                ;
-+---------------------------------------------------------------------------------------------------+------------------------+
-; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
-; Generate netlist for functional simulation only                                                   ; Off                    ;
-; Time scale                                                                                        ; 1 ps                   ;
-; Truncate long hierarchy paths                                                                     ; Off                    ;
-; Map illegal HDL characters                                                                        ; Off                    ;
-; Flatten buses into individual nodes                                                               ; Off                    ;
-; Maintain hierarchy                                                                                ; Off                    ;
-; Bring out device-wide set/reset signals as ports                                                  ; Off                    ;
-; Enable glitch filtering                                                                           ; Off                    ;
-; Do not write top level VHDL entity                                                                ; Off                    ;
-; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                    ;
-; Architecture name in VHDL output netlist                                                          ; structure              ;
-; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                    ;
-; Generate third-party EDA tool command script for gate-level simulation                            ; Off                    ;
-+---------------------------------------------------------------------------------------------------+------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                          ;
-+-----------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                     ;
-+-----------------------------------------------------------------------------------------------------+
-; C:/Users/Jason/OneDrive/Study/EXPERIENT/VHDL/ZD_Serial_Port/simulation/modelsim/Serial_Port.vho     ;
-; C:/Users/Jason/OneDrive/Study/EXPERIENT/VHDL/ZD_Serial_Port/simulation/modelsim/Serial_Port_vhd.sdo ;
-+-----------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -82,14 +47,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II EDA Netlist Writer
     Info: Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Dec 19 16:57:16 2016
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Serial_Port -c Serial_Port
-Info: Generated simulation netlist will be non-hierarchical because the design has SignalTap II partitions, termination control logic and/or a design partition that contains bidirectional ports
-Info: Generated files "Serial_Port.vho" and "Serial_Port_vhd.sdo" in directory "C:/Users/Jason/OneDrive/Study/EXPERIENT/VHDL/ZD_Serial_Port/simulation/modelsim/" for EDA simulation tool
+    Info: Processing started: Tue Dec 20 11:57:47 2016
+Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off Serial_Port -c Serial_Port --gen_testbench
+Info: Generated VHDL Test Bench File C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/simulation/modelsim/Top_Module.vht for simulation
 Info: Quartus II EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 267 megabytes
-    Info: Processing ended: Mon Dec 19 16:57:17 2016
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 266 megabytes
+    Info: Processing ended: Tue Dec 20 11:57:47 2016
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
 
 

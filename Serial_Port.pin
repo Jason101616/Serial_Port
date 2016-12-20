@@ -68,13 +68,13 @@ RST                          : 1         : input  : 3.3-V LVTTL       :         
 Buttom1                      : 2         : input  : 3.3-V LVTTL       :         : 1         : Y              
 Buttom2                      : 3         : input  : 3.3-V LVTTL       :         : 1         : Y              
 GND*                         : 4         :        :                   :         : 1         :                
-GND*                         : 5         :        :                   :         : 1         :                
+Buttom2_Out                  : 5         : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 6         :        :                   :         : 1         :                
-GND*                         : 7         :        :                   :         : 1         :                
+RBUF[7]                      : 7         : output : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : 8         : power  :                   : 3.3V    : 1         :                
 GND                          : 9         : gnd    :                   :         :           :                
 GND*                         : 10        :        :                   :         : 1         :                
-Buttom1_Out                  : 11        : output : 3.3-V LVTTL       :         : 1         : N              
+RBUF[6]                      : 11        : output : 3.3-V LVTTL       :         : 1         : N              
 ~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 12        : input  : 3.3-V LVTTL       :         : 1         : N              
 DATA0                        : 13        : input  :                   :         : 1         :                
 nCONFIG                      : 14        :        :                   :         : 1         :                
@@ -89,8 +89,8 @@ MSEL0                        : 22        :        :                   :         
 MSEL1                        : 23        :        :                   :         : 1         :                
 DCLK                         : 24        : bidir  :                   :         : 1         :                
 ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 25        : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : 26        :        :                   :         : 1         :                
-GND*                         : 27        :        :                   :         : 1         :                
+Buttom1_Out                  : 26        : output : 3.3-V LVTTL       :         : 1         : N              
+RBUF[1]                      : 27        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 28        :        :                   :         : 1         :                
 VCCIO1                       : 29        : power  :                   : 3.3V    : 1         :                
 GND                          : 30        : gnd    :                   :         :           :                
@@ -102,7 +102,7 @@ GND*                         : 35        :        :                   :         
 GND*                         : 36        :        :                   :         : 1         :                
 GND*                         : 37        :        :                   :         : 4         :                
 GND*                         : 38        :        :                   :         : 4         :                
-Buttom2_Out                  : 39        : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : 39        :        :                   :         : 4         :                
 GND*                         : 40        :        :                   :         : 4         :                
 GND*                         : 41        :        :                   :         : 4         :                
 GND*                         : 42        :        :                   :         : 4         :                
@@ -119,11 +119,11 @@ GND*                         : 52        :        :                   :         
 GND*                         : 53        :        :                   :         : 4         :                
 GND*                         : 54        :        :                   :         : 4         :                
 GND*                         : 55        :        :                   :         : 4         :                
-GND*                         : 56        :        :                   :         : 4         :                
-GND*                         : 57        :        :                   :         : 4         :                
+RBUF[4]                      : 56        : output : 3.3-V LVTTL       :         : 4         : N              
+RBUF[2]                      : 57        : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : 58        :        :                   :         : 4         :                
 GND*                         : 59        :        :                   :         : 4         :                
-GND*                         : 60        :        :                   :         : 4         :                
+RBUF[0]                      : 60        : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : 61        :        :                   :         : 4         :                
 GND*                         : 62        :        :                   :         : 4         :                
 GND                          : 63        : gnd    :                   :         :           :                
@@ -177,18 +177,18 @@ GND*                         : 110       :        :                   :         
 GND*                         : 111       :        :                   :         : 2         :                
 GND*                         : 112       :        :                   :         : 2         :                
 GND*                         : 113       :        :                   :         : 2         :                
-Data_out_MCU                 : 114       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 114       :        :                   :         : 2         :                
 VCCIO2                       : 115       : power  :                   : 3.3V    : 2         :                
 GND                          : 116       : gnd    :                   :         :           :                
 VCCINT                       : 117       : power  :                   : 1.5V    :           :                
 GND                          : 118       : gnd    :                   :         :           :                
-GND*                         : 119       :        :                   :         : 2         :                
+RBUF[3]                      : 119       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 120       :        :                   :         : 2         :                
 GND*                         : 121       :        :                   :         : 2         :                
 GND*                         : 122       :        :                   :         : 2         :                
 GND*                         : 123       :        :                   :         : 2         :                
 GND*                         : 124       :        :                   :         : 2         :                
-GND*                         : 125       :        :                   :         : 2         :                
+RBUF[5]                      : 125       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 126       :        :                   :         : 2         :                
 GND*                         : 127       :        :                   :         : 2         :                
 GND*                         : 128       :        :                   :         : 2         :                

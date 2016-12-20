@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Serial_Port
-Mon Dec 19 16:57:08 2016
+Tue Dec 20 11:54:40 2016
 Quartus II Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
 
 
@@ -15,11 +15,10 @@ Quartus II Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |Top_Module|Transmitter:b2v_inst1|state
   9. State Machine - |Top_Module|Receiver:b2v_inst|state
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -45,13 +44,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                ;
 +-----------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Dec 19 16:57:08 2016         ;
+; Analysis & Synthesis Status ; Successful - Tue Dec 20 11:54:40 2016         ;
 ; Quartus II Version          ; 11.0 Build 208 07/03/2011 SP 1 SJ Web Edition ;
 ; Revision Name               ; Serial_Port                                   ;
 ; Top-level Entity Name       ; Top_Module                                    ;
 ; Family                      ; Cyclone                                       ;
-; Total logic elements        ; 548                                           ;
-; Total pins                  ; 9                                             ;
+; Total logic elements        ; 590                                           ;
+; Total pins                  ; 16                                            ;
 ; Total virtual pins          ; 0                                             ;
 ; Total memory bits           ; 0                                             ;
 ; Total PLLs                  ; 0                                             ;
@@ -148,16 +147,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                             ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+
-; Transmitter.vhd                  ; yes             ; User VHDL File  ; C:/Users/Jason/OneDrive/Study/EXPERIENT/VHDL/ZD_Serial_Port/Transmitter.vhd ;
-; Top_Module.vhd                   ; yes             ; User VHDL File  ; C:/Users/Jason/OneDrive/Study/EXPERIENT/VHDL/ZD_Serial_Port/Top_Module.vhd  ;
-; Receiver.vhd                     ; yes             ; User VHDL File  ; C:/Users/Jason/OneDrive/Study/EXPERIENT/VHDL/ZD_Serial_Port/Receiver.vhd    ;
-; Divider.vhd                      ; yes             ; User VHDL File  ; C:/Users/Jason/OneDrive/Study/EXPERIENT/VHDL/ZD_Serial_Port/Divider.vhd     ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                   ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+
+; Transmitter.vhd                  ; yes             ; User VHDL File  ; C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Transmitter.vhd ;
+; Top_Module.vhd                   ; yes             ; User VHDL File  ; C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Top_Module.vhd  ;
+; Receiver.vhd                     ; yes             ; User VHDL File  ; C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Receiver.vhd    ;
+; Divider.vhd                      ; yes             ; User VHDL File  ; C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Divider.vhd     ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------+
@@ -165,33 +164,33 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 548                    ;
-;     -- Combinational with no register       ; 286                    ;
-;     -- Register only                        ; 141                    ;
+; Total logic elements                        ; 590                    ;
+;     -- Combinational with no register       ; 330                    ;
+;     -- Register only                        ; 139                    ;
 ;     -- Combinational with a register        ; 121                    ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 146                    ;
-;     -- 3 input functions                    ; 25                     ;
-;     -- 2 input functions                    ; 230                    ;
+;     -- 4 input functions                    ; 159                    ;
+;     -- 3 input functions                    ; 21                     ;
+;     -- 2 input functions                    ; 265                    ;
 ;     -- 1 input functions                    ; 6                      ;
 ;     -- 0 input functions                    ; 0                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 331                    ;
+;     -- normal mode                          ; 373                    ;
 ;     -- arithmetic mode                      ; 217                    ;
 ;     -- qfbk mode                            ; 0                      ;
 ;     -- register cascade mode                ; 0                      ;
-;     -- synchronous clear/load mode          ; 64                     ;
+;     -- synchronous clear/load mode          ; 32                     ;
 ;     -- asynchronous clear/load mode         ; 209                    ;
 ;                                             ;                        ;
-; Total registers                             ; 262                    ;
+; Total registers                             ; 260                    ;
 ; Total logic cells in carry chains           ; 224                    ;
-; I/O pins                                    ; 9                      ;
+; I/O pins                                    ; 16                     ;
 ; Maximum fan-out node                        ; Divider:b2v_inst2|bclk ;
 ; Maximum fan-out                             ; 227                    ;
-; Total fan-out                               ; 2018                   ;
-; Average fan-out                             ; 3.62                   ;
+; Total fan-out                               ; 2097                   ;
+; Average fan-out                             ; 3.46                   ;
 +---------------------------------------------+------------------------+
 
 
@@ -200,9 +199,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name               ; Library Name ;
 +----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------+--------------+
-; |Top_Module                ; 548 (0)     ; 262          ; 0           ; 9    ; 0            ; 286 (0)      ; 141 (0)           ; 121 (0)          ; 224 (0)         ; 0 (0)      ; |Top_Module                       ;              ;
-;    |Divider:b2v_inst2|     ; 65 (65)     ; 35           ; 0           ; 0    ; 0            ; 30 (30)      ; 2 (2)             ; 33 (33)          ; 32 (32)         ; 0 (0)      ; |Top_Module|Divider:b2v_inst2     ;              ;
-;    |Receiver:b2v_inst|     ; 309 (309)   ; 150          ; 0           ; 0    ; 0            ; 159 (159)    ; 69 (69)           ; 81 (81)          ; 128 (128)       ; 0 (0)      ; |Top_Module|Receiver:b2v_inst     ;              ;
+; |Top_Module                ; 590 (0)     ; 260          ; 0           ; 16   ; 0            ; 330 (0)      ; 139 (0)           ; 121 (0)          ; 224 (0)         ; 0 (0)      ; |Top_Module                       ;              ;
+;    |Divider:b2v_inst2|     ; 63 (63)     ; 33           ; 0           ; 0    ; 0            ; 30 (30)      ; 0 (0)             ; 33 (33)          ; 32 (32)         ; 0 (0)      ; |Top_Module|Divider:b2v_inst2     ;              ;
+;    |Receiver:b2v_inst|     ; 353 (353)   ; 150          ; 0           ; 0    ; 0            ; 203 (203)    ; 69 (69)           ; 81 (81)          ; 128 (128)       ; 0 (0)      ; |Top_Module|Receiver:b2v_inst     ;              ;
 ;    |Transmitter:b2v_inst1| ; 174 (174)   ; 77           ; 0           ; 0    ; 0            ; 97 (97)      ; 70 (70)           ; 7 (7)            ; 64 (64)         ; 0 (0)      ; |Top_Module|Transmitter:b2v_inst1 ;              ;
 +----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -233,27 +232,17 @@ Encoding Type:  One-Hot
 +----------------+--------------+----------------+---------------+
 
 
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; Transmitter:b2v_inst1|xout2           ; Merged with Transmitter:b2v_inst1|xout ;
-; Total Number of Removed Registers = 1 ;                                        ;
-+---------------------------------------+----------------------------------------+
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 262   ;
-; Number of registers using Synchronous Clear  ; 64    ;
+; Total registers                              ; 260   ;
+; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 209   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 213   ;
+; Number of registers using Clock Enable       ; 211   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -263,13 +252,13 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                 ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------+----------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; |Top_Module|Transmitter:b2v_inst1|\Transmit_Data:cnt16[21] ;                            ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; |Top_Module|Receiver:b2v_inst|\ReceiveData:cnt[8]          ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; |Top_Module|Transmitter:b2v_inst1|\Transmit_Data:cnt16[20] ;                            ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; |Top_Module|Receiver:b2v_inst|\ReceiveData:cnt[9]          ;                            ;
 ; 8:1                ; 32 bits   ; 160 LEs       ; 32 LEs               ; 128 LEs                ; |Top_Module|Divider:b2v_inst2|cnt[17]                      ;                            ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; |Top_Module|Receiver:b2v_inst|\ReceiveData:cnt16[31]       ;                            ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 32 LEs               ; 128 LEs                ; |Top_Module|Receiver:b2v_inst|\ReceiveData:cnt16[30]       ;                            ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; |Top_Module|Receiver:b2v_inst|Selector3                    ;                            ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; |Top_Module|Transmitter:b2v_inst1|Selector5                ;                            ;
-; 9:1                ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; |Top_Module|Transmitter:b2v_inst1|Selector2                ;                            ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; |Top_Module|Transmitter:b2v_inst1|Selector4                ;                            ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; |Top_Module|Transmitter:b2v_inst1|Selector3                ;                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------------------------------------------------------+----------------------------+
 
 
@@ -288,7 +277,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Dec 19 16:57:06 2016
+    Info: Processing started: Tue Dec 20 11:54:38 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Serial_Port -c Serial_Port
 Warning: Parallel compilation is not licensed and has been disabled
 Info: Found 2 design units, including 1 entities, in source file transmitter.vhd
@@ -309,13 +298,13 @@ Info: Elaborating entity "Transmitter" for hierarchy "Transmitter:b2v_inst1"
 Warning (10036): Verilog HDL or VHDL warning at Transmitter.vhd(30): object "xbufs_add" assigned a value but never read
 Info: Elaborating entity "Divider" for hierarchy "Divider:b2v_inst2"
 Info: Generating hard_block partition "hard_block:auto_generated_inst"
-Info: Implemented 557 device resources after synthesis - the final resource count might be different
+Info: Implemented 606 device resources after synthesis - the final resource count might be different
     Info: Implemented 5 input pins
-    Info: Implemented 4 output pins
-    Info: Implemented 548 logic cells
+    Info: Implemented 11 output pins
+    Info: Implemented 590 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 320 megabytes
-    Info: Processing ended: Mon Dec 19 16:57:08 2016
+    Info: Peak virtual memory: 319 megabytes
+    Info: Processing ended: Tue Dec 20 11:54:40 2016
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

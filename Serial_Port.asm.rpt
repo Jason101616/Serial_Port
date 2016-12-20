@@ -1,5 +1,5 @@
 Assembler report for Serial_Port
-Mon Dec 19 16:57:14 2016
+Tue Dec 20 11:54:47 2016
 Quartus II Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Jason/OneDrive/Study/EXPERIENT/VHDL/ZD_Serial_Port/Serial_Port.sof
-  6. Assembler Device Options: C:/Users/Jason/OneDrive/Study/EXPERIENT/VHDL/ZD_Serial_Port/Serial_Port.pof
+  5. Assembler Device Options: C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Serial_Port.sof
+  6. Assembler Device Options: C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Serial_Port.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Dec 19 16:57:14 2016 ;
+; Assembler Status      ; Successful - Tue Dec 20 11:54:47 2016 ;
 ; Revision Name         ; Serial_Port                           ;
 ; Top-level Entity Name ; Top_Module                            ;
 ; Family                ; Cyclone                               ;
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-----------------------------------------------------------------------------+
-; Assembler Generated Files                                                   ;
-+-----------------------------------------------------------------------------+
-; File Name                                                                   ;
-+-----------------------------------------------------------------------------+
-; C:/Users/Jason/OneDrive/Study/EXPERIENT/VHDL/ZD_Serial_Port/Serial_Port.sof ;
-; C:/Users/Jason/OneDrive/Study/EXPERIENT/VHDL/ZD_Serial_Port/Serial_Port.pof ;
-+-----------------------------------------------------------------------------+
++-------------------------------------------------------------------+
+; Assembler Generated Files                                         ;
++-------------------------------------------------------------------+
+; File Name                                                         ;
++-------------------------------------------------------------------+
+; C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Serial_Port.sof ;
+; C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Serial_Port.pof ;
++-------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Jason/OneDrive/Study/EXPERIENT/VHDL/ZD_Serial_Port/Serial_Port.sof ;
-+----------------+--------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                              ;
-+----------------+--------------------------------------------------------------------------------------+
-; Device         ; EP1C3T144C8                                                                          ;
-; JTAG usercode  ; 0xFFFFFFFF                                                                           ;
-; Checksum       ; 0x00099E30                                                                           ;
-+----------------+--------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Serial_Port.sof ;
++----------------+----------------------------------------------------------------------------+
+; Option         ; Setting                                                                    ;
++----------------+----------------------------------------------------------------------------+
+; Device         ; EP1C3T144C8                                                                ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                 ;
+; Checksum       ; 0x000A96D5                                                                 ;
++----------------+----------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Jason/OneDrive/Study/EXPERIENT/VHDL/ZD_Serial_Port/Serial_Port.pof ;
-+--------------------+----------------------------------------------------------------------------------+
-; Option             ; Setting                                                                          ;
-+--------------------+----------------------------------------------------------------------------------+
-; Device             ; EPCS1                                                                            ;
-; JTAG usercode      ; 0x00000000                                                                       ;
-; Checksum           ; 0x01A1AD20                                                                       ;
-; Compression Ratio  ; 2                                                                                ;
-+--------------------+----------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/OtherDisks/Study/EXPERIENT/VHDL/ZD_Serial_Port/Serial_Port.pof ;
++--------------------+------------------------------------------------------------------------+
+; Option             ; Setting                                                                ;
++--------------------+------------------------------------------------------------------------+
+; Device             ; EPCS1                                                                  ;
+; JTAG usercode      ; 0x00000000                                                             ;
+; Checksum           ; 0x01A1040D                                                             ;
+; Compression Ratio  ; 2                                                                      ;
++--------------------+------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -117,12 +117,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Dec 19 16:57:13 2016
+    Info: Processing started: Tue Dec 20 11:54:46 2016
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Serial_Port -c Serial_Port
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 274 megabytes
-    Info: Processing ended: Mon Dec 19 16:57:14 2016
+    Info: Peak virtual memory: 275 megabytes
+    Info: Processing ended: Tue Dec 20 11:54:47 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

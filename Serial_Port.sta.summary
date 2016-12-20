@@ -3,24 +3,24 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Setup 'Divider:b2v_inst2|bclk'
-Slack : -12.541
-TNS   : -1727.797
+Slack : -15.683
+TNS   : -1963.464
 
 Type  : Setup 'CLK'
-Slack : -7.319
-TNS   : -239.434
+Slack : -7.195
+TNS   : -232.924
 
 Type  : Hold 'Divider:b2v_inst2|bclk'
-Slack : 0.884
+Slack : 0.887
 TNS   : 0.000
 
 Type  : Hold 'CLK'
-Slack : 1.066
+Slack : 1.068
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'CLK'
 Slack : -1.583
-TNS   : -93.843
+TNS   : -88.571
 
 Type  : Minimum Pulse Width 'Divider:b2v_inst2|bclk'
 Slack : -1.318
