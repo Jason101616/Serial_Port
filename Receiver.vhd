@@ -71,12 +71,11 @@ begin
 					cnt:=0;
 				end if;
 			when r_sample=>
+				cnt16:=cnt16+1;
 				if(cnt16=16) then
 					rbufs(rbitcnt):=rins;
 					rbitcnt:=rbitcnt+1;
 					cnt16:=0;
-				else
-					cnt16:=cnt16+1;
 				end if;
 				if (rbitcnt=8) then
 					state<=r_stop;

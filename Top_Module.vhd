@@ -16,7 +16,10 @@ ENTITY Top_Module IS
 		CLK :  IN  STD_LOGIC;
 		Buttom1 :  IN  STD_LOGIC;
 		Buttom2 :  IN  STD_LOGIC;
-		Data_out :  OUT  STD_LOGIC
+		Buttom1_Out : OUT STD_LOGIC;
+		Buttom2_Out : OUT STD_LOGIC;
+		Data_out :  OUT  STD_LOGIC;
+		RBUF : OUT STD_LOGIC_VECTOR (7 DOWNTO 0)
 	);
 END Top_Module;
 
@@ -55,8 +58,9 @@ SIGNAL	SYNTHESIZED_WIRE_3 :  STD_LOGIC_VECTOR(7 DOWNTO 0);
 
 
 BEGIN 
-
-
+RBUF <= SYNTHESIZED_WIRE_3;
+Buttom1_Out <= Buttom1;
+Buttom2_Out <= Buttom2;
 
 b2v_inst : Receiver
 PORT MAP(bclkr => SYNTHESIZED_WIRE_4,

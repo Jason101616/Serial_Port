@@ -14,7 +14,8 @@ port(
 	 xreset:in std_logic:='0';
 	 x_cmd:in std_logic;		--read rising_edge than transmit one frame
 	 xbuf: in std_logic_vector(7 downto 0);
-	 xout:out std_logic);
+	 xout:out std_logic
+	 );
 end Transmitter;
 
 

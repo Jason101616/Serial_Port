@@ -20,36 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-Top_Module
-# storage
-db|Serial_Port.(0).cnf
-db|Serial_Port.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-top_module.vhd
-a6d720624e99c60617ce618ccb2b8f0
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 Receiver
 # storage
 db|Serial_Port.(1).cnf
@@ -61,7 +31,7 @@ ON
 # case_insensitive
 # source_file
 receiver.vhd
-c6fce957337a684f538f4a7cc1bc5934
+95a0944b2f6e9717c7ec5e229ce546d1
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -97,7 +67,7 @@ ON
 # case_insensitive
 # source_file
 transmitter.vhd
-19ba9578cce4046e47843f9058de94
+bdc81c70e185ae6e45a95081b6923e66
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -133,7 +103,7 @@ ON
 # case_insensitive
 # source_file
 divider.vhd
-316ff5a4b7a82bd7ff2458d9a5afc
+25db92d7797dc710b32cc456ef998125
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -147,6 +117,36 @@ ON
 }
 # hierarchies {
 Divider:b2v_inst2
+}
+# macro_sequence
+
+# end
+# entity
+Top_Module
+# storage
+db|Serial_Port.(0).cnf
+db|Serial_Port.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+top_module.vhd
+893a8dd57c5b9b1eb7afca75676262fc
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

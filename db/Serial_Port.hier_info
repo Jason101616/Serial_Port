@@ -5,7 +5,9 @@ RST => Transmitter:b2v_inst1.xreset
 RST => Divider:b2v_inst2.resetb
 CLK => Divider:b2v_inst2.clk
 Buttom1 => Divider:b2v_inst2.but1
+Buttom1 => Buttom1_Out.DATAIN
 Buttom2 => Divider:b2v_inst2.but2
+Buttom2 => Buttom2_Out.DATAIN
 
 
 |Top_Module|Receiver:b2v_inst

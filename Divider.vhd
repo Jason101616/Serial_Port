@@ -16,9 +16,10 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity Divider is
     port (
-              clk,resetb:in std_logic;
-              but1,but2:in std_logic;
-              bclk:out std_logic);
+		  clk,resetb:in std_logic;
+		  but1,but2:in std_logic;
+		  bclk:out std_logic
+		  );
 end Divider;
 
 architecture behavioral of Divider is
@@ -38,7 +39,7 @@ begin
 		
 	elsif (but1='1' and but2='0') then
 		if cnt>650 then 
-			cnt:=0; bclk<='1';                        --设置分频系数650:4800baud/s
+			cnt:=0; bclk<='1';                        --设置分频系数651:4800baud/s
 		else 
 			cnt:=cnt+1; bclk<='0';
 		end if; 
