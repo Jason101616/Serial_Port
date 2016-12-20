@@ -16,7 +16,10 @@ ENTITY Top_Module IS
 		CLK :  IN  STD_LOGIC;
 		Buttom1 :  IN  STD_LOGIC;
 		Buttom2 :  IN  STD_LOGIC;
-		Data_out :  OUT  STD_LOGIC
+		Buttom1_Out : OUT STD_LOGIC;
+		Buttom2_Out : OUT STD_LOGIC;
+		Data_out :  OUT  STD_LOGIC;
+		Data_out_MCU : OUT STD_LOGIC
 	);
 END Top_Module;
 
@@ -36,7 +39,8 @@ COMPONENT Transmitter
 		 xreset : IN STD_LOGIC;
 		 x_cmd : IN STD_LOGIC;
 		 xbuf : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-		 xout : OUT STD_LOGIC
+		 xout : OUT STD_LOGIC;
+		 xout2 : OUT STD_LOGIC
 	);
 END COMPONENT;
 
@@ -45,6 +49,7 @@ COMPONENT Divider
 		 resetb : IN STD_LOGIC;
 		 but1 : IN STD_LOGIC;
 		 but2 : IN STD_LOGIC;
+		 but1_out, but2_out: out std_logic;
 		 bclk : OUT STD_LOGIC
 	);
 END COMPONENT;
@@ -71,7 +76,8 @@ PORT MAP(bclkt => SYNTHESIZED_WIRE_4,
 		 xreset => RST,
 		 x_cmd => SYNTHESIZED_WIRE_2,
 		 xbuf => SYNTHESIZED_WIRE_3,
-		 xout => Data_out);
+		 xout => Data_out,
+		 xout2 => Data_out_MCU);
 
 
 b2v_inst2 : Divider
@@ -79,6 +85,8 @@ PORT MAP(clk => CLK,
 		 resetb => RST,
 		 but1 => Buttom1,
 		 but2 => Buttom2,
+		 but1_out => Buttom1_Out,
+		 but2_out => Buttom2_Out,
 		 bclk => SYNTHESIZED_WIRE_4);
 
 
