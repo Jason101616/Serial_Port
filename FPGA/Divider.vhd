@@ -2,6 +2,7 @@
 --Author: Du Zhang
 --Create Date: 2016-12-18
 --Email: duzhang6@gmail.com
+--Github: https://github.com/Jason101616
 
 ----------50MHz clock 16-divided frequency-------
 ----------9600Baud/s 325-------------------------
@@ -27,33 +28,33 @@ begin
 process(clk,resetb)
 variable cnt:integer:=0;
 begin
-  if resetb='1' then                                         -- resetb='1'时复位
+  if resetb='1' then                                         -- When resetb='1', reset
      cnt:=0; bclk<='0';
   elsif rising_edge(clk) then
 	if (but1='0' and but2='0') then
 		if cnt>324 then 
-			cnt:=0; bclk<='1';                        --设置分频系数325:9600baud/s
+			cnt:=0; bclk<='1';                        --set division coefficient 325:9600baud/s
 		else 
 			cnt:=cnt+1; bclk<='0';
 		end if; 
 		
 	elsif (but1='1' and but2='0') then
 		if cnt>650 then 
-			cnt:=0; bclk<='1';                        --设置分频系数651:4800baud/s
+			cnt:=0; bclk<='1';                        --set division coefficient 651:4800baud/s
 		else 
 			cnt:=cnt+1; bclk<='0';
 		end if; 
 		
 	elsif (but1='0' and but2='1') then
 		if cnt>1301 then 
-			cnt:=0; bclk<='1';                        --设置分频系数1302:2400baud/s
+			cnt:=0; bclk<='1';                        --set division coefficient 1302:2400baud/s
 		else 
 			cnt:=cnt+1; bclk<='0';
 		end if; 
     
     else 
 		if cnt>2603 then 
-			cnt:=0; bclk<='1';                        --设置分频系数2604:1200baud/s
+			cnt:=0; bclk<='1';                        --set division coefficient 2604:1200baud/s
 		else 
 			cnt:=cnt+1; bclk<='0';
 		end if;

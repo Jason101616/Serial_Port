@@ -2,6 +2,7 @@
 --Author: Du Zhang
 --Create Date: 2016-12-18
 --Email: duzhang6@gmail.com
+--Github: https://github.com/Jason101616
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 

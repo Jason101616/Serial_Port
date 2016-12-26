@@ -1,3 +1,11 @@
+/*
+Project: Serial_Port-MCU-Display_Module
+--Author: Du Zhang
+--Create Date: 2016-12-18
+--Email: duzhang6@gmail.com
+--Github: https://github.com/Jason101616
+*/
+
 #define _DISP1_C_
 #include "reg51.h"
 #include "stdio.h"
